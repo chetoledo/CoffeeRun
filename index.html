@@ -9,12 +9,68 @@
 	<header>
 		<h1>CoffeeRun</h1>
 	</header>
+	<section>
+<!-- Text Boxes -->
+		<div class="panel panel-default"></div>
+		   <div class="panel-body"></div>
+		   	<form data-coffee-order="form"></form>
+			   <div class="form-group">
+			   <label for="coffeeOrder">Coffee Order</label>
+			   <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
+			</div>
+        <div class="form-group">
+			   <label for="emailInput">Email</label>
+			   <input class="form-control" type="email" name="emailAddress" id="emailInput" value="">
+		</div>
+<!-- Radio Buttons for cup size-->
+		<div class="radio">
+			<label>
+				<input type="radio" name="size" value="short">
+				Short
+			</label>
+		</div>
+
+		<div class="radio">
+			<label>
+				<input type="radio" name="size" value="tall" checked>
+				Tall
+			</label>
+		</div>
+
+		<div class="radio">
+			<label>
+				<input type="radio" name="size" value="grande">
+				Grande
+			</label>
+		</div>
+
+<!-- Adding a drop down menu -->
+		<div class="form-group">
+			<label for="flavorShot">Flavor Shot</label>
+			<select id="flavorShot" class="form-control" name="flavor">
+				<option value="">None</option>
+				<option value="caramel">Caramel</option>
+				<option value="almond">Almond</option>
+				<option value="mocha">Mocha</option>
+			</select>
+		</div>
+
+<!-- Adding a range slider -->
+	<div>
+		<label for="strengthLevel">Caffeine Rating</label>
+		<input name="strength" id="strengthLevel" type="range" value="30">
+	</div>
+	<!-- Adding SUBMIT and RESET buttons-->
+	<button type="submit" class="btn btn-default">Submit</button>
+	<button type="reset" class="btn btn-default">Reset</button>
+
+	</section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+	<script src="scripts/formhandler.js" charset="utf-8"></script>
 	<script src="scripts/datastore.js" charset="utf-8"></script>
 	<script src="scripts/truck.js" charset="utf-8"></script>
 	<script src="scripts/main.js" charset="utf-8"></script>
-<!--	<script src="scripts/formhandler.js"></script> -->
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-	        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	   	crossorigin="anonymous"></script> -->
+
 </body>
 </html>
