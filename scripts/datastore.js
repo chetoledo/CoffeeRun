@@ -24,19 +24,6 @@
 		delete this.data[key];
 	};
 
-
-//	function DataStore {
-//		constructor() {
-//			// console.log('running the Datastore function');
-//			this.data = {};
-//		}
-//		add(key, val) { this.data[key] = val; }
-//		get(key)      { return this.data[key]; }
-//		getAll()      { return this.data; }
-//		remove(key)   { delete this.data[key]; }
-//	}
-
-
 	App.DataStore = DataStore;
 	window.App = App;
 
