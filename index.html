@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=-width, initial-scale=1.0">
+
 	<title>coffeerun</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="Payment_Form/Submit_Form">
+	<!-- <link rel="stylesheet" href="Payment_Form/Submit_Form"> -->
 </head>
 <body class="container">
 	<header>
@@ -12,16 +15,16 @@
 	</header>
 	<section>
 <!-- Text Boxes -->
-		<div class="panel panel-default"></div>
-		   <div class="panel-body"></div>
-		   	<form data-coffee-order="form"></form>
+		<div class="panel panel-default">
+		   <div class="panel-body">
+		   	<form data-coffee-order="form">
 			   <div class="form-group">
 			   <label for="coffeeOrder">Coffee Order</label>
 			   <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
 			</div>
         <div class="form-group">
 			   <label for="emailInput">Email</label>
-			   <input class="form-control" type="email" name="emailAddress" id="emailInput" value="">
+			   <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="email@email.com">
 		</div>
 <!-- Radio Buttons for cup size-->
 		<div class="radio">
@@ -57,17 +60,31 @@
 		</div>
 
 <!-- Adding a range slider -->
-	<div>
+	<div class="form-group">
 		<label for="strengthLevel">Caffeine Rating</label>
 		<input name="strength" id="strengthLevel" type="range" value="30">
 	</div>
 	<!-- Adding SUBMIT and RESET buttons-->
-	<button type="submit" class="btn btn-default">Submit</button>
-	<button type="reset" class="btn btn-default">Reset</button>
+	<button type="submit" class="btn btn-primary">Submit</button>
+	<button type="reset" class="btn btn-primary-default">Reset</button>
+
+  </form>
+ </div>
+</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<h4>Pending Orders:</h4>
+			<div data-coffee-order="checklist">
+			</div>
+		</div>
+	</div>
 
 	</section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			crossorigin="anonymous"></script>
+
+	<script src="scripts/checklist.js" charset="utf-8"></script>
 	<script src="scripts/formhandler.js" charset="utf-8"></script>
 	<script src="scripts/datastore.js" charset="utf-8"></script>
 	<script src="scripts/truck.js" charset="utf-8"></script>
